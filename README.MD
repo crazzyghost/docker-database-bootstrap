@@ -1,4 +1,4 @@
-# docker setup for local database setup
+# docker local dev database setup
 The setup assumes you want to only connect to from your shell using the client tools, but want to handle the install and setup using docker.
 
 ## Setup
