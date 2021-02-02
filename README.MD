@@ -33,7 +33,7 @@ psql -U postgres -h localhost
 ```
 
 ### MongoDB
-MongoDB is exposed on port `27017`. To connect to mongo from your local network, make sure [mongo shell and mongo tools](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) are installed:
+MongoDB is exposed on port `27017`. To connect to mongo from your local network, make sure [mongo shell and mongo tools](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#mongodb-community-edition-packages) are installed:
 
 Import the public key used by the package management system.
 ```bash 
