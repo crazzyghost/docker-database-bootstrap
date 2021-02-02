@@ -12,11 +12,11 @@ The setup assumes you want to only connect to from your shell using the client t
 ### Mysql
 Mysql is exposed on port `3306`. To connect to mysql from your local network, make sure mysql client is installed:
 ```bash
-sudo apt install mysql-client-core-8.0`
+sudo apt install mysql-client-core-8.0
 ```
 Connect using tcp:
 ```bash 
-mysql -u root -h 127.0.0.1 -P`
+mysql -u root -h 127.0.0.1 -P
 ```
 
 ### PostgreSQL
