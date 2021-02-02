@@ -57,3 +57,9 @@ Install `mongodb-org-shell` and `mongodb-org-tools`
 ```bash
 sudo apt-get install mongodb-org-shell mongodb-org-tools
 ```
+
+## Use helper.sh to setup
+- run `chmod +x helper.sh` to make  `helper.sh` file executable
+- run `./helper.sh` to install clients automatically
+- run `./up.sh` to start databases
+- run `./down.sh` to stop databases
