@@ -1,5 +1,5 @@
 # Local database setup with Docker
-The setup assumes you want to only connect to from your shell using the client tools, but want to handle the install and setup using docker.
+The setup assumes you want to also connect to the containers from your shell using the client tools, but want to handle the install and setup using docker.
 
 ## Setup
 - run `chmod +x up.sh` to make  `up.sh` file executable
@@ -58,8 +58,20 @@ Install `mongodb-org-shell` and `mongodb-org-tools`
 sudo apt-get install mongodb-org-shell mongodb-org-tools
 ```
 
+Connect using:
+
+```bash
+mongo
+```
+
 ### Neo4j
 Neo4j is exposed through http on port `7474`. Bolt is exposed on `7687`. To connect to neo4j from your local network, make sure [cypher-shell](https://dist.neo4j.org/cypher-shell/cypher-shell_1.1.14_all.deb) is installed.
+
+Connect using:
+
+```bash
+cypher-shell -u neo4j -p password
+```
 
 ## Use helper.sh to setup
 - run `chmod +x helper.sh` to make  `helper.sh` file executable
