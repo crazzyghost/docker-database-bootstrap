@@ -58,6 +58,9 @@ Install `mongodb-org-shell` and `mongodb-org-tools`
 sudo apt-get install mongodb-org-shell mongodb-org-tools
 ```
 
+### Neo4j
+Neo4j is exposed through http on port `7474`. Bolt is exposed on `7687`. To connect to neo4j from your local network, make sure [cypher-shell](https://dist.neo4j.org/cypher-shell/cypher-shell_1.1.14_all.deb) is installed.
+
 ## Use helper.sh to setup
 - run `chmod +x helper.sh` to make  `helper.sh` file executable
 - run `./helper.sh` to install clients automatically
