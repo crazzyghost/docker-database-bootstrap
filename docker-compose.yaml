@@ -31,4 +31,21 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      
+  neo4j:
+    container_name: neo4j
+    image: neo4j:3.5.3
+    restart: "always"
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - $HOME/.docker/volumes/codeland-neo4j/data:/data
+      - $HOME/.docker/volumes/codeland-neo4j/logs:/logs
+      - $HOME/.docker/volumes/codeland-neo4j/import:/var/lib.neo4j/import
+      - $HOME/.docker/volumes/codeland-neo4j/plugins:/plugins
+    environment:
+      # uncomment next three lines if running docker on windows
+      #NEO4J_dbms_connector_http_advertised__address: "localhost:7474"
+      #NEO4J_dbms_connector_bolt_advertised__address: "localhost:7687"
+      NEO4J_AUTH: neo4j/neo4j
+  
